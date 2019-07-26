@@ -1,0 +1,196 @@
+﻿@model ContactUsModel
+@using Nop.Web.Models.Common;
+@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.ContactUs").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-contact-page");
+}
+<div class="page contact-page">
+    <div class="page-title">
+        <h1>@T("PageTitle.ContactUs")</h1>
+    </div>
+    @Html.Action("TopicBlock", "Topic", new { systemName = "ContactUs" })
+    <div class="page-body">
+        @Html.Widget("contactus_top")
+        @if (Model.SuccessfullySent)
+        {
+            <div class="result">
+                <!--TGISTart-->
+                @(new HtmlString(@Model.Result))
+                <!--TGIEnd-->
+            </div>
+        }
+        else
+        {
+            <!-- TGIStart -->
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    TGILoadFormElements();
+                });
+
+                function TGILoadFormElements() {
+                    var selectedValue = document.getElementById("tgi_contact_us_reason").value;
+                    var innerText = "";
+
+                    @if (Model.tgi_contact_info != null)
+                    {
+                        for (int i = 0; i < Model.tgi_contact_info.Count; i++)
+                        {
+                            <text>
+                            if (selectedValue == '@Model.tgi_contact_info[i].ContactCode')
+                            {
+                                document.getElementById("TGIContactUsShortDescription").innerHTML = "@(new HtmlString(@Model.tgi_contact_info[i].ContactShortDescription.Replace('"','\'')))";
+                                document.getElementById("TGIContactUsLongDescription").innerHTML = "@(new HtmlString(@Model.tgi_contact_info[i].ContactLongDescription.Replace('"', '\'')))";
+                                document.getElementById("tgi_dynamic_form_fields").innerHTML = "";
+
+                                if (@Model.tgi_contact_info[i].contact_field_list.Count > 0)
+                                {
+                                    @for (int j = 0; j < Model.tgi_contact_info[i].contact_field_list.Count; j++)
+                                    {
+                                    <text>
+                                    innerText = '<div class="inputs">' +'@Html.Label(Model.tgi_contact_info[i].contact_field_list[j].Trim('*'))'
+                                                +'@Html.TextBoxFor(model => model.tgi_contact_field_list[Model.tgi_contact_info[i].contact_field_list[j]],
+                                                    new
+                                                    {
+                                                        @class = Model.tgi_contact_info[i].contact_field_list[j].ToLower().Trim('*'),
+                                                        placeholder = "Enter " + Model.tgi_contact_info[i].contact_field_list[j].Trim('*')
+                                                        //@onchange = "CheckEmpty('" + Model.tgi_contact_info[i].contact_field_list[j] + "', this.value);"
+                                                    })'
+                                                +'<span class="field-validation-error"><span id="@Model.tgi_contact_info[i].contact_field_list[j]"></span></span>'
+                                                +'</div>';
+                                    document.getElementById("tgi_dynamic_form_fields").innerHTML += innerText;
+                                    </text>
+                                    }
+                                }
+                            }
+                            </text>
+                        }
+                    }
+                }
+
+                // FOR NOW KEEP THIS COMMENTED AS WE DO NOT NEED ONCHANGE VALIDATION
+                // this function is used when user do the text change for custom fields
+                // this is in place to keep consistency with other fields
+                //function CheckEmpty(name, val){
+                //    if(name.indexOf("*") > -1){
+                //        if (!val.trim()){
+                //            document.getElementById(name).innerHTML="Field is required";
+                //        }
+                //        else {
+                //            document.getElementById(name).innerHTML="";
+                //        }
+                //    }
+                //}
+
+                // validate the form before submitting
+                // whether mandatory fields are provided or not
+                function ValidateFormSubmission(){
+                    var inputs = document.getElementsByTagName('input');
+                    var index, name;
+                    var isValid = true;
+                    for (index = 0; index < inputs.length; ++index) {
+                        if(inputs[index].type == "text"){
+                            if(inputs[index].name.indexOf("*") > -1){
+                                name = inputs[index].name.substring(inputs[index].name.indexOf("[") + 1, inputs[index].name.indexOf("]"));
+                                if(!inputs[index].value.trim()){
+                                    document.getElementById(name).innerHTML="Field is required.";
+                                    isValid = false;
+                                }
+                                else {
+                                    document.getElementById(name).innerHTML="";
+                                }
+                            }
+                        }
+                    }
+
+                    return isValid;
+                }
+            </script>
+            
+            using (Html.BeginForm(null, null, FormMethod.Post, new { onsubmit = "return ValidateFormSubmission();" }))
+            //TGIEnd
+            {
+                @Html.AntiForgeryToken()
+                var validationSummary = Html.ValidationSummary(true);
+                if (!MvcHtmlString.IsNullOrEmpty(validationSummary))
+                {
+                    <div class="message-error">@validationSummary</div>
+                }
+                <!--TGIStart-->
+                if (Model.tgi_contact_info != null && Model.tgi_contact_info.Count > 0)
+                {
+                    <div class="TGI-contact-us">
+                        @Html.DropDownListFor(model => model.tgi_contact_us_reason, Model.tgi_contact_us_reason_options, new { @onchange = "TGILoadFormElements();" })
+                        <br />
+                        <br />
+                        <strong><p id="TGIContactUsShortDescription">@Model.tgi_contact_info[0].ContactShortDescription</p></strong>
+                    </div>
+                    <br />
+                    <div>
+                        <p id="TGIContactUsLongDescription">@Model.tgi_contact_info[0].ContactLongDescription</p>
+                    </div>
+                    <br />
+                }
+                <!--TGIEnd-->
+                <div class="fieldset">
+                    <div class="form-fields">
+                        <div class="inputs-left">
+                            <div class="inputs">
+                                @Html.LabelFor(model => model.FullName)
+                                <div class="input-box">
+                                    @Html.TextBoxFor(model => model.FullName, new { @class = "fullname", placeholder = T("ContactUs.FullName.Hint") })
+				    @Html.RequiredHint()
+                                </div>
+                                @Html.ValidationMessageFor(model => model.FullName)
+                            </div>
+                            <div class="inputs">
+                                @Html.LabelFor(model => model.Email)
+                                <div class="input-box">
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "email", placeholder = T("ContactUs.Email.Hint") })
+				    @Html.RequiredHint()
+                                </div>
+                                @Html.ValidationMessageFor(model => model.Email)
+                            </div>
+                            @if (Model.SubjectEnabled)
+                            {
+                                <div class="inputs">
+                                    @Html.LabelFor(model => model.Subject)
+                                    @Html.TextBoxFor(model => model.Subject, new { @class = "subject", placeholder = T("ContactUs.Subject.Hint") })
+                                @Html.RequiredHint()
+                                    @Html.ValidationMessageFor(model => model.Subject)
+                                </div>
+                            }
+                           
+                        </div>
+                        <div class="inputs-right inputs">
+                            @Html.LabelFor(model => model.Enquiry)
+                            <div class="input-box">
+                                @Html.TextAreaFor(model => model.Enquiry, new { @class = "enquiry", placeholder = T("ContactUs.Enquiry.Hint") })
+				                            @Html.RequiredHint()
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Enquiry)
+                        </div>
+			 @if (Model.DisplayCaptcha)
+                            {
+                                <div class="captcha-box">
+                                    @Html.Raw(Html.GenerateCaptcha())
+                                </div>
+                            }
+                            <!--TGIStart-->
+                            <div id="tgi_dynamic_form_fields">
+
+                            </div>
+                            <!--TGIEnd-->
+                    </div>
+                </div>
+                <div class="buttons">
+                    <input type="submit" name="send-email" class="button-1 contact-us-button" value="@T("ContactUs.Button")" />
+                </div>
+            }
+        }
+        @Html.Widget("contactus_bottom")
+    </div>
+</div>

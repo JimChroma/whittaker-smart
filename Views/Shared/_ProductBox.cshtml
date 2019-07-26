@@ -1,0 +1,136 @@
+﻿@model ProductOverviewModel
+@using Nop.Core
+@using Nop.Core.Domain.Orders
+@using Nop.Core.Domain.Tax
+@using Nop.Core.Infrastructure
+@using Nop.Web.Models.Catalog;
+@{
+    //prepare "Add to cart" AJAX link
+    string addtocartlink = "";
+    var shoppingCartTypeId = (int)ShoppingCartType.ShoppingCart;
+    var quantity = 1;
+    if (Model.ProductPrice.ForceRedirectionAfterAddingToCart)
+    {
+        addtocartlink = Url.RouteUrl("AddProductToCart-Catalog", new { productId = Model.Id, shoppingCartTypeId = shoppingCartTypeId, quantity = quantity, forceredirection = Model.ProductPrice.ForceRedirectionAfterAddingToCart });
+    }
+    else
+    {
+        addtocartlink = Url.RouteUrl("AddProductToCart-Catalog", new { productId = Model.Id, shoppingCartTypeId = shoppingCartTypeId, quantity = quantity, });
+    }
+}
+<div class="product-item" data-productid="@Model.Id">
+    <h2 class="product-title">
+        <!--TGIStart NOP-274-->
+        @if (ViewData.ContainsKey("TGIClubItemIndex"))
+        {
+            <a class="tgi-product-name-@(ViewData["TGIClubItemIndex"])">@Model.Name</a>
+        }
+        else
+        {
+            <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })">@Model.Name</a>
+        }
+        <!--TGIEnd-->
+    </h2>
+    <div class="picture">
+        <!--TGIStart NOP-274-->
+        @if (ViewData.ContainsKey("TGIClubItemIndex"))
+        {
+            <a>
+                <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" />
+            </a>
+        }
+        else
+        {
+            <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })" title="@Model.DefaultPictureModel.Title">
+                <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+            </a>
+        }
+        <!--TGIEnd-->
+    </div>
+    <div class="details">
+        @if (Model.ReviewOverviewModel.AllowCustomerReviews)
+        {
+            int ratingPercent = 0;
+            if (Model.ReviewOverviewModel.TotalReviews != 0)
+            {
+                ratingPercent = ((Model.ReviewOverviewModel.RatingSum * 100) / Model.ReviewOverviewModel.TotalReviews) / 5;
+            }
+            <div class="product-rating-box" title="@string.Format(T("Reviews.TotalReviews").Text, Model.ReviewOverviewModel.TotalReviews)">
+                <div class="rating">
+                    <div style="width: @(ratingPercent)%">
+                    </div>
+                </div>
+            </div>
+        }
+        <!--TGIStart-->
+        @if (!String.IsNullOrEmpty(Model.CustomProperties["sku"].ToString()))
+        {
+            <div class="sku">
+            <span class="label">@T("Products.Sku"): </span><span class="value" itemprop="sku">@Model.CustomProperties["sku"]</span>
+            </div> 
+        }
+        <!--TGIEnd-->
+        <div class="description">
+            @Html.Raw(Model.ShortDescription)
+        </div>
+        <div class="add-info">
+            @Html.Widget("productbox_addinfo_before", Model.Id)
+            <div class="prices">
+                @if (!String.IsNullOrEmpty(Model.ProductPrice.OldPrice))
+                {
+                    <span class="price old-price">@Model.ProductPrice.OldPrice</span>
+                }
+                <span class="price actual-price">@Model.ProductPrice.Price</span>
+                <!--TGIStart-->
+                @if (Model.ProductPrice.TGIShowPeritemPricing)
+                {
+                    <br />
+                    <label>(@T("TGI.show_peritem_pricing.Label"):</label>
+                    <span>@Model.ProductPrice.TGIPerItemPrice)</span>
+                }
+                <!--TGIEnd-->
+                @if (Model.ProductPrice.DisplayTaxShippingInfo)
+                {
+                    var inclTax = EngineContext.Current.Resolve<IWorkContext>().TaxDisplayType == TaxDisplayType.IncludingTax;
+                    //tax info is already included in the price (incl/excl tax). that's why we display only shipping info here
+                    //of course, you can modify appropriate locales to include VAT info there
+                    <span class="tax-shipping-info">
+                        @T(inclTax ? "Products.Price.TaxShipping.InclTax" : "Products.Price.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = Html.GetTopicSeName("shippinginfo") }))
+                    </span>
+                }
+                @if (!String.IsNullOrEmpty(Model.ProductPrice.BasePricePAngV))
+                {
+                    <div class="base-price-pangv">
+                        @Model.ProductPrice.BasePricePAngV
+                    </div>
+                }
+            </div>
+            @Html.Widget("productbox_addinfo_middle", Model.Id)
+            <!--TGIStart NOP-274-->
+            @if (!ViewData.ContainsKey("TGIClubItemIndex"))
+            {
+                <div class="buttons">
+                    @if (!Model.ProductPrice.DisableBuyButton)
+                    {
+                        var addToCartText = T("ShoppingCart.AddToCart").Text;
+                        if (Model.ProductPrice.IsRental)
+                        {
+                            addToCartText = T("ShoppingCart.Rent").Text;
+                        }
+                        if (Model.ProductPrice.AvailableForPreOrder)
+                        {
+                            addToCartText = T("ShoppingCart.PreOrder").Text;
+                        }
+                        <input type="button" value="@(addToCartText)" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('@addtocartlink    ');return false;" />
+                    }
+                </div>
+            }
+            else
+            {
+                @Html.TextBox("Items[" + ViewData["TGIClubItemIndex"] + "].Quantity", Model.TGIClubItemQty, new { @class = "qty-input tgi-club-item-qty-" + ViewData["TGIClubItemIndex"] })
+            }
+            <!--TGIEnd-->
+            @Html.Widget("productbox_addinfo_after", Model.Id)
+        </div>
+    </div>
+</div>
