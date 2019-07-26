@@ -1,0 +1,1250 @@
+input[type="button"],
+input[type="submit"],
+button,
+.button-1,
+.button-2,
+#goToTop,
+.header-links li > span,
+.new_select > span:after,
+.cart-wrapper .cart-qty,
+.theme-selector:after,
+.block .title,
+.block .list a:before,
+.block .year strong:before,
+.home-page-category-grid .title a,
+.sub-category-grid .title a,
+.manufacturer-grid .title a,
+.download-sample a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-state-active.ui-tabs-active a,
+.compare-products-page .clear-list,
+.order-progress a:before,
+.opc .active .step-title,
+.opc .step-title span,
+.news-items .buttons a,
+.overview .add-to-cart-panel,
+.variant-overview .add-to-cart-panel,
+.quick-view-button a,
+.nop-jcarousel .button,
+.nop-jcarousel .jcarousel-prev-horizontal,
+.nop-jcarousel .jcarousel-next-horizontal,
+.jcarousel-skin-thumbs .jcarousel-prev-horizontal,
+.jcarousel-skin-thumbs .jcarousel-next-horizontal,
+.ui-slider-handle,
+.ui-slider-handle:last-child,
+.filtersDropDownPanel .select-wrap .select-box:after,
+.ajaxFilters .k-window-actions .k-icon,
+.nopAjaxFilters7Spikes .close-filters,
+.ajax-cart-button-wrapper,
+.miniProductDetailsView .add-to-cart,
+.nop-jcarousel.vertical-holder .carousel-title span,
+.nop-jcarousel .jcarousel-prev,
+.nop-jcarousel .jcarousel-next,
+.user-agreement-page .button-1,
+.previous-product a,
+.next-product a,
+.sale-of-the-day-offer .go-to-product-page,
+.sale-of-the-day-offer .owl-dot.active,
+.picture-thumbs .slick-arrow,
+.slick-dots .slick-active button {
+  background-color: #843a4b;
+}
+.eu-cookie-bar-notification button,
+.footbox .title,
+.block .list > li,
+.block .sublist,
+.block .tags,
+.poll-options,
+.poll-results,
+.product-review-item .review-item-head,
+.free-shipping,
+.overview .add-to-cart-panel,
+.variant-overview .add-to-cart-panel,
+.ui-tabs .ui-tabs-panel,
+.mega-menu .title,
+.mega-menu .topic-wrapper strong,
+.ajax-cart-button-wrapper,
+.miniProductDetailsView .add-to-cart {
+  border-color: #843a4b;
+}
+.eu-cookie-bar-notification button,
+.eu-cookie-bar-notification a,
+.block .list a:hover,
+.block .list a.active,
+.block .list > li.active > a,
+.block .sublist .sublist .active a,
+.block .view-all a,
+.product-tags-all-page li a,
+.block .tags li a:hover,
+.product-tags-all-page li a:hover,
+.poll strong,
+.poll .buttons input,
+.breadcrumb a:hover *,
+.vendor-list li a,
+.overview .value a,
+.variant-overview .value a,
+.product-no-reviews a,
+.product-review-links a,
+.product-tags-list a:hover,
+.product-reviews-page h1 a,
+.product-review-item .review-info a:hover,
+.product-review-helpfulness .vote:hover,
+.compare-products-page .button-2,
+.email-a-friend-page .title h2,
+.accept-privacy-policy a,
+.registration-result-page .result,
+.login-page .forgot-password a:hover,
+.address-list-page .info .name,
+.return-request-list-page .details a,
+.selected-checkout-attributes,
+.cart-collaterals .title,
+.cart-footer .terms-of-service .read,
+.sitemap-page a,
+.post-title,
+.news-title,
+.blog-page .tags a,
+.blogpost-page .tags a,
+.news-list-homepage .view-all a,
+.free-shipping,
+.product-review-item .review-item-head,
+.cart a,
+.data-table a,
+.compare-products-table a,
+.forums-table-section a,
+.quickViewWindow .product-name,
+.mega-menu .box li a:hover,
+.header-menu .sublist li:hover > a,
+.footbox li a:hover,
+.sale-of-the-day-offer .product-name h4:hover,
+.category-description a,
+.manufacturer-description a,
+.full-description a,
+.topic-html-content a,
+.topic-page a,
+.post-body a,
+.news-body a,
+.custom-tab a,
+.selected-options-list > li span {
+  color: #843a4b;
+}
+.eu-cookie-bar-notification button,
+.free-shipping {
+  background-color: rgba(132, 58, 75, 0.1);
+}
+.mega-menu .dropdown,
+.header-menu .sublist-wrap {
+  background-color: rgba(132, 58, 75, 0.9);
+}
+@media all and (max-width: 1000px) {
+  .responsive-nav-wrapper,
+  .header-menu .close-menu,
+  .header-menu .back-button {
+    background-color: #843a4b;
+  }
+  .header-menu > ul li,
+  .header-menu .plus-button {
+    border-color: #843a4b;
+  }
+}
+@media all and (min-width: 1001px) {
+  .mini-shopping-cart .name {
+    color: #843a4b;
+  }
+  .header-menu,
+  .block .title {
+    background-color: #843a4b;
+  }
+}
+/* --- ADDED by CME Websites to fix anchor link issue --- */
+.opacityTable a{
+text-decoration:none!important;
+}
+.opacityTable img:hover{
+    opacity:0.9;
+}
+.producth2{
+    line-height: 23px;
+    color: #37939b;
+    font-size:25px;
+}
+.productP{
+    margin-bottom: 20px!important;
+}
+.productA{
+    background-color: #a4d404;
+    color: white!important;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none!important;
+}
+.productA:hover{
+    background-color:#abdc06!important;
+}
+.productImg{
+    margin: 0;
+    display: block;
+    float: left;
+}
+.inner-left{
+    float: left;
+    width: 50%;
+    padding-right:5px;
+}
+.inner-right{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+}
+.social {
+    margin-bottom: 5px;
+}
+.custom-footer-badges a{
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+}
+.subHeader{
+    text-align: center!important;
+    color: #2a7378;
+    font-size: 21px;
+    margin-top: 0!important;
+}
+.page-title h1 {
+    text-align: center;
+    floaT: none!important;
+    margin-top: 2%;
+}
+.header-upper{
+    background:none!important;
+}
+.header-links-wrapper{
+    float:right;
+}
+.header-upper {
+    background: #f3f3f3!important;
+}
+.footlist .title {
+    margin: 0 0 10px;
+    border-bottom: none;
+    padding: 0px 0 0px;
+}
+.footlist li {
+    padding: 0px 0;
+}
+.second .title {
+    display: block!important;
+    font-family: "Open Sans", Arial, Tahoma, sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+.footer-upper {
+    padding-top: 10px;
+}
+.second{
+    padding-left:18%!important;
+}
+.contacts li span:before {
+    width: 5px;
+}
+.halfbox ul li{color:white;margin-bottom:0;}
+.footer-upper .master-column-wrapper{min-height:0;}
+.halfbox .title{display:none;}
+.halfbox h2{display:none;}
+.halfbox p{color:white;}
+@media (min-width: 1025px) {
+    .halfbox {
+        display: inline-block;
+        width: 48%;
+        margin: 0 4% 20px 0;
+        border: none;
+        padding: 0;
+        text-align: left;
+        font-size: 12px;
+    }
+}
+@media (min-width: 769px){
+    .halfbox{
+        display: block;
+        width: auto;
+    }
+}
+@media (min-width:481px){
+    .halfbox{
+        display: inline-block;
+        width: 46%;
+        margin: 0 2% 20px;
+        vertical-align: top;
+        font-size: 12px;
+        float: left;
+    }
+}
+.anchorfix {
+display: block !important;
+padding-top: 60px !important;
+margin-top: -60px !important;
+}
+/* --- END ADDED by CME Websites to fix anchor link issue --- */
+/* --- ADDED by bobg during test upgrade to NOP38 --- */
+.topic-wrapper .nav-choices img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+ .nav-choices-two img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 45px;
+}
+
+.topic-wrapper .thirty-three {
+    width: 33.3%;
+}
+/* --- END ADDED by bobg during test upgrade to NOP38 --- */
+
+.fancybox-content {
+width:894px;
+height:520px;
+}
+
+.newsletter {display:none;}/* hiding built-in newletter signup */
+.parts-finder-menu { margin-top:20px; }
+.parts-finder-menu-img { 
+  float:left; 
+  width:20px; 
+  margin:10px 15px 5px 15px; 
+}
+
+/*-------
+Quick Cart
+-------*/
+
+.header-links li a.quick-cart-link {  padding-left:5px; }
+.header-links li.above-1001 { display: inline-block; }
+
+@media only screen and (max-width: 1001px){
+   .header-links li.above-1001{
+      display:none;
+   }
+}
+
+.custom-footer-badges { padding-top : 10px; }
+
+.custom-shipping-msg-title {
+    font-weight: bold;
+    color: #c00;
+    padding-bottom: 5px;
+    font-size:16px;
+}
+
+/*-------
+The following overrides the SMART default css for the 
+custom Order checkout attributes (Notes on the cart page)
+-------*/
+.checkout-attributes {
+  margin: 20px 0 0;
+  border-bottom: 1px dashed #ccc;
+  padding: 0 0 20px;
+  text-align: left;
+}
+
+.checkout-attributes dt {
+  margin: 0 0 5px;
+  font-weight: normal;
+}
+
+textarea#checkout_attribute_1 {
+  width:100%;
+  min-height:70px;
+}
+
+
+/*to keep superscript from messing up line height */
+sup, sub {vertical-align: baseline; position: relative;
+  top: -0.4em;}
+sub {top: 0.4em;}
+
+div.clearboth{clear:both;height:0px;}
+.header-menu { background: #39959c; }
+/*CME text for banner*/
+.inner h2{color:#ffffff;padding-top:3.5rem; padding-left: 12px;text-shadow:1px 2px 1px #000;}
+.inner p{color:#ffffff;padding-left: 12px;text-shadow:1px 2px 1px #000;font-size: 1.2em;font-weight:700;}
+.innernews img {margin:0!important;}
+.benefit-list li{
+display:inline-block;
+}
+.benefit-list{
+overflow:hidden;
+}
+.individualbenefits {
+    width: 37%;
+    float: left;
+    padding: 10px;
+    background-color: #eaeced;
+    margin-right: 12%;
+    margin-bottom:63px;
+-webkit-box-shadow: 4px 3px 5px 0px rgba(198,197,197,1);
+-moz-box-shadow: 4px 3px 5px 0px rgba(198,197,197,1);
+box-shadow: 4px 3px 5px 0px rgba(198,197,197,1);
+}
+@media only screen and (max-width: 1295px) {
+.individualbenefitstext{
+  width:100%!important;
+      font-size: 90%!important;
+    margin-top: 11px;
+}
+}
+@media only screen and (max-width: 670px) {
+.benefit-list {
+    /* overflow: hidden; */
+    margin: 0 auto!important;
+    width: 90%!important;
+    padding: 0!important;
+}
+.individualbenefits {
+    width: 100%!important;
+
+    }
+    .individualbenefits img{
+      width:100%!important;
+    }
+
+}
+.individualbenefitstext{
+float: left;
+    width: 28%;
+    font-size: 94%;
+    line-height: 1.2;
+    /* color: black; */
+}
+.individualbenefits img{
+    width: 68%;
+    float: left;
+    margin-right: 10px;
+    height:auto;
+}
+.individualbenefits{
+    width: 37%;
+    float: left;
+    padding: 10px;
+    background-color: #eaeced;
+}
+.categories.fullWidth .box {width: 33.33%;}
+.fifty-percent{width:50%;}
+.thirty-three{width:33.3%;}
+/* CME css changes */
+.home-page-category-grid{display:none;}
+.home-page-product-grid{display:none;}
+.rich-blog-homepage.title{display:none;}
+/* CME Banner for Header Images banner and inner */
+
+     .encapimg {background: url('/Content/Images/uploaded/encapsulation/encapsulation.jpg') no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* CME Banner for Header Images banner and inner */
+.benefits {background: url('/Content/Images/uploaded/carpet-cleaning-benefits/benefitsbanner.jpg') no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* CME Science Banner */
+.science {background: url('/Content/Images/uploaded/science-of-cleaning/science-of-cleaning.jpg') no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* CME Banner for Article */
+.articles {background: url('/Content/Images/uploaded/when-should-capret-be-cleaned/carpet-cleaning-article-banner.jpg') no-repeat center center;    
+     background-size: cover;
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* CME Banner for SmartCare*/
+.smartcare {background: url('/Content/Images/uploaded/smartcare/homebanner.png') no-repeat center center;    
+     background-size: cover;
+     height: 40vh; margin-bottom: 40px;
+}
+/* CME Banner for CaseStudy */
+.casestudy {background: url('/Content/Images/uploaded/carpet-cleaning-benefits/casestudybanner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+
+/* CME Banner for faq */
+.faq {background: url('/Content/Images/uploaded/banners/faqbanner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* CME Banner for BlueRibbon */
+.blueribbon {background: url('/Content/Images/uploaded/banners/blue-ribbon-banner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+
+/* CME Banner for Instructions */
+.instructions {background: url('/Content/Images/uploaded/banners/cleaning-instructions-whittaker.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* Banner for History */
+.history {background: url('/Content/Images/uploaded/banners/whittaker-system-history-banner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+
+/* Banner for auto*/
+.autoban{background: url('/Content/Images/uploaded/auto-simple-savings/autobanner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+/* Banner for systembanner*/
+.systembanner{background: url('/Content/Images/uploaded/banners/systembanner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 25vh; margin-bottom: 40px;
+}
+
+/* Banner for smartcaretrio*/
+.smartcaretrio{background: url('/Content/Images/uploaded/banners/smart-care-trio/smart-care-trio-banner.jpg') 
+     no-repeat center center;    
+     background-size: cover;
+     height: 756px; 
+}
+/* Banner for newsletterbanner*/
+.newsletterbanner{background-color:#39959c;    
+     background-size: cover;
+     height: 260px; 
+}
+
+/* Banner for vidlist*/
+/* Banner for vidlist*/
+.vidlist ul {font-size: 1.3em; padding: 20px;}
+.vidlist li {margin-bottom: 20px;}
+
+.clicklist ul {font-size: 1.1em; padding: 20px;}
+.clicklist li {margin-bottom: 10px;}
+
+.smartcaretriosml {display:none;}
+.youtube h2 { padding-top: 9px; padding-bottom: 9px;}
+.youtube iframe {width: 80%; height: 55vh;}
+.youtube1 h2 { padding-top: 12px; padding-bottom: 12px;}
+.youtube1 iframe {width: 50%; height: 35vh;}
+/* CME Equal Four Colum Layout*/
+.fourcolumns {width:100%;float:left; display:block;}
+.fourcol {width:25%; float:left; display:block;}
+@media (max-width: 960px) {
+  .fourcol {width:50%; float:left; display:block;}
+  /* --------CME smartcaretrio layout--------*/
+  .smartcaretrio {display:none;}
+.smartcaretriosml {display:block;}
+}
+@media (max-width: 500px) {
+  .fourcol {width:100%; float:left; display:block;}
+}
+
+/* CME Equal Three Column Layout*/
+.threecolumns {width:100%;float:left; display:block;}
+.threecol {width:33%; float:left; display:block;}
+@media (max-width: 960px) {
+  .threecol {width:50%; float:left; display:block;}
+}
+@media (max-width: 500px) {
+  .threecol {width:100%; float:left; display:block;}
+}
+
+/* Button to stay same size under 1001px */
+@media (min-width: 100px) {
+ 
+.buttonblu {   
+    background-color: #39959C;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 2px;
+    width:250px;
+}
+}
+
+@media only screen and (max-width: 1016px) {
+.fifty-percent{width:100%;} 
+.thirty-three{width:100%;}
+}
+
+/* SAMPLE MENU */
+
+.dropdown .topic-wrapper p { text-align: left; }
+.menu-image { 
+  float: left; 
+  margin: 0 15px 15px 0; 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+.mega-menu .custom-menu .title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.mega-menu .custom-menu .title:after {  display: none; }
+
+.page-body .box-menu.box-menu-3 {
+  clear: both;
+  display: block;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #39959c;
+    background: #FFF;
+    margin: 20px 0;
+}
+
+.box-25 {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  min-width: 250px;
+  padding: 0 30px 30px 0;
+}
+
+.box-50 {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  min-width: 350px;
+  padding: 0 30px 30px 0;
+}
+
+
+.mega-menu .topic-wrapper { max-width: None; }
+
+@media (min-width: 1281px) {
+.mega-menu .dropdown {
+    left: 50%;
+    width: 1200px;
+    margin-left: -600px;
+    border-bottom: 10px solid #39959c;
+}
+}
+
+@media (min-width: 1001px) and (max-width:1280px) {
+.mega-menu .dropdown {
+    left: 50%;
+    width: 980px;
+    margin-left: -490px;
+    border-bottom: 10px solid #39959c;
+}
+}
+
+@media (min-width: 1001px) {
+.mega-menu .custom-menu. menupagename  li {
+    padding: 5px 0;
+}
+
+.dropdown .custom-menu.menupagename .box {
+    width: 50%;
+    padding: 20px 20px 20px 20px;
+}
+
+.mega-menu .custom-menu. menupagename .box li a {
+    border-bottom: 2px solid #eee;
+    padding: 12px 0px 5px;
+}
+
+.custom-menu. menupagename ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: None;
+}
+
+.custom-menu. menupagename  {
+  text-align:left;
+}
+}
+
+/* RICH TEXT BLOG */
+
+@media (min-width: 1367px) {
+.blog-search-box input.search-box-text {
+    width: 200px !important;
+    margin-right: 10px;
+}
+}
+
+.blog-search-box .search-box-button, .rich-blog-homepage .read-more, .post-actions .read-more { background-color: #39959c; }
+
+.rich-blog-homepage .read-more:hover, .post-actions .read-more:hover { background-color: #39959c; opacity: 0.8; }
+
+
+/* padding for images */
+.page-body img{margin: 5px;}
+
+/* 40 and 60% content divs */
+div.content40 {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 40%;
+  padding: 0 30px 30px 0;
+}
+
+.content40 img {padding:0px};
+
+div.content60 {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 0 30px 30px 0;
+}
+
+@media (max-width: 850px) {
+  div.content40 {width:100%; display:block;}
+  div.content60 {width:100%; display:block;}
+}
+
+
+
+/* 50% content divs */
+
+div.content50container {width: 80%; margin:10px 10%;}
+
+div.content50 {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0 30px 30px 0;
+}
+
+.content50 h2 {padding-top: 11px; padding-bottom: 11px;}
+
+@media (max-width: 750px) {
+  div.content50 {width:100%; display:block;}
+  .youtube iframe{height: 20vh;}
+.youtube1 iframe{width:80%; height: 20vh;}
+}
+
+@media (max-width: 350px) {
+  div.content50 img {width:70%; height:auto; display:block;}
+}
+/* button */
+div.btmbuttons {padding: 0px;  margin-left: auto; margin-right: auto;}
+
+/* --------Table for sds--------------- */
+
+table {
+
+    border: 1px solid #ccc;
+
+    width: 100%;
+
+    margin:0;
+
+    padding:0;
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+  }
+
+
+
+  table tr {
+
+    border: 1px solid #ddd;
+
+    padding: 5px;
+
+  }
+
+
+
+  table th, table td {
+
+    padding: 10px;
+
+    text-align: center;
+
+  }
+
+
+
+  table th {
+
+    text-transform: uppercase;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+
+
+
+    table {
+
+      border: 0;
+
+      width:100%;
+
+    }
+
+
+
+    table thead {
+
+      display: none;
+
+    }
+
+
+
+  table tr {
+
+      margin-bottom: 10px;
+
+      display: block;
+
+      border-bottom: 2px solid #ddd;
+
+    }
+
+
+
+    table td {
+
+      display: block;
+
+      text-align: right;
+
+      font-size: 13px;
+
+      border-bottom: 1px dotted #ccc;
+
+    }
+
+
+
+     table td:last-child {
+
+      border-bottom: 0;
+
+    }
+
+
+
+    table td:before {
+
+      content: attr(data-label);
+
+      float: left;
+
+      text-transform: uppercase;
+
+      font-weight: bold;
+
+    }
+
+  }
+
+	/* provide some minimal visual accomodation for IE8 and below */
+
+	.sdstbl tr{
+
+		background: #f7fffe;
+
+	}
+
+	/*  Define the background color for all the ODD background rows  */
+
+	.sdstbl tr:nth-child(odd){ 
+
+		background: #ffffff;
+
+	}
+
+	/*  Define the background color for all the EVEN background rows  */
+
+	.sdstbl tr:nth-child(even){
+
+		background: #f7fffe;
+
+	}
+.sdstbl img {padding:0px;}
+/* --------End Table for sds--------------- */
+
+.nav-choices img {
+
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 29px;}
+.choicestwo img {margin-bottom: 22px !important;}
+/* --------menu hover color---------- */
+.mega-menu .box li a:hover {color:#eefe40}
+.parts-finder-menu a:hover {color:#eefe40}
+.parts-finder-menu a {font-weight:bold;}
+.seals {text-align: center;}
+.category-description a {text-decoration: underline;}
+.category-description a:hover {color:#A2C04E}
+/* --------remove skype button---------- */
+.skype {display:none !important;}
+/* --------mobile menu pages adjustments---------- */
+@media (max-width: 1000px) {
+.topic-page ul {list-style:none; text-align: left;margin-bottom: 24px;}
+}
+
+/* --------Cart Css edits---------- */
+
+@media screen and (max-width: 600px){
+.cart-total-left{float: left; text-align: left;}
+.cart-total-right{float: right; text-align: right;}
+.cart-total td {border-bottom:none;}
+.cart-total tr {height:70px;}
+.cart-item-row {display: inline-flex;}
+}
+
+.calcimg {margin-left: -43px; margin-bottom: 45px!important;}
+@-moz-document url-prefix() {
+.calcimg {margin-left:0px; margin-bottom: 20px!important;}
+}
+
+.parts-finder-menu-img {margin-left:24vh;}
+.parts-finder-menu a {text-transform: uppercase;}
+.parts-finder-menu {font-size:1.1em;}
+
+
+/* edits to new layout */
+
+/* new header layout */
+.header{background:#fff;}
+
+/* topic page header */
+.topic-page  {padding: 39px;background: #fff;padding-top:10px;}
+.html-topic-page body {background:#2a7378;}
+.html-topic-page .master-wrapper-content {
+    background: url(https://www.whittakersystem.com/Content/Images/uploaded/GlassBuilding-Inner-page.jpg);
+    background-size: 100%!important;
+    background-color: #2a7378!important;
+    margin-top: -25px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.html-topic-page .center-1 {padding-top: 350px;}
+
+
+/* footer */
+.footer-upper {background:#2a7378;}
+.footer-middle {background:#26696e;}
+.footer-lower {background:#216064;}
+.footer {margin-top:30px;}
+.footer-upper, .footer-lower {color:#fff;}
+.footer-middle li {color:#fff;}
+.footer-middle h3 {color:#fff!important;}
+
+.topic-page-59 .master-wrapper-content {background-image: url(https://www.whittakersystem.com/Content/Images/uploaded/hotel-carpet-cleaning-2000-862.jpg);}
+
+@media screen and (max-width: 800px){
+.html-topic-page .center-1 {padding-top: 200px;}
+.topic-page  {padding: 75px;}
+}
+
+@media screen and (max-width: 500px){
+.html-topic-page .center-1 {padding-top: 176px;}
+.topic-page  {padding: 30px;}
+}
+
+/* category page */
+
+.html-category-page body {background:#2a7378;} 
+.block .title {
+    background: none!important;
+    color: #327478;
+}
+.html-category-page .side-2 {background:#f3f3f3; padding:50px;}
+
+.html-category-page .master-column-wrapper {
+    background: #fff;
+    padding-top: 80px;
+}
+
+.html-category-page .ajax-cart-button-wrapper input[type="text"] {display:none;}
+
+
+.html-category-page .ajax-cart-button-wrapper {
+    display: inline-block;
+    border: 2px solid #327478;
+    border-radius: 0px;
+    background: #327478!important;
+    padding: 0px 15px;
+}
+
+.filtersGroupPanel li.checkbox-item.checked label:before, .colorOptions li.checkbox-item.checked .color {
+    background: #327478!important;
+}
+
+.breadcrumb {
+        margin: -129px 0 20px -320px;
+    padding-bottom: 80px;
+    padding-left: 145px;
+    width: 1200px;
+    float: left;
+}
+
+.breadcrumb ul {
+    background: #f3f3f3;
+    width: 1200px;
+    margin-left: -145px;
+    padding: 20px 0px 20px 100px;
+}
+
+.product-title{color:#327478;}
+
+.html-category-page  .master-wrapper-content {background-image: url(https://www.whittakersystem.com/Content/Images/uploaded/GlassBuilding-Inner-page.jpg);}
+.html-category-page  {background:#2a7378;}
+.html-category-page  .master-wrapper-content {
+    background-size: 100%!important;
+    background-color: #2a7378!important;
+    margin-top: -25px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 350px;
+}
+.category-page {padding-right:40px;}
+
+/*  header */
+.header-upper {
+    background-image: url(https://www.whittakersystem.com/Content/Images/uploaded/topbar1.png);
+    padding-top: 30px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header-menu::after {
+	/*margin-bottom:-50px;*/
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom:50px rgba(255, 255, 255, .6) solid;
+    }
+.stick  .header-menu::after {display:none;}
+/* product page */
+
+.html-product-details-page input[type="button"], input[type="submit"], button, .button-1, .button-2 {
+    border: none;
+    border-radius: 0px;
+    background: #327478!important;
+}
+
+.html-product-details-page .overview .add-to-cart-panel, .variant-overview .add-to-cart-panel {
+    display: inline-block;
+    position: relative;
+    border: 3px solid #377578!important;
+    border-radius: 0px;
+    background: #377578!important;
+}
+
+/* header */
+.html-product-details-page .overview .qty-input, .variant-overview .qty-input, .overview .qty-dropdown, .variant-overview .qty-dropdown {border-radius: 0px;    margin: 0;}
+.header .search-box .search-box-button {background: url(/noptest/Themes/Smart/Content/img/search-button.png) 40% center no-repeat!important;}
+
+/* home and header buttons and input styling */
+input[type="text"], input[type="password"], textarea, select {border-radius: 0px;}
+.header .search-box form {border-radius: 0px; background: #327478;}
+.header .search-box input.search-box-text {border-radius: 0px;}
+
+.ajax-cart-button-wrapper {border-radius: 0px;}
+.ajax-cart-button-wrapper input[type="text"], .ajax-cart-button-wrapper select {border-radius: 0px;}
+input[type="button"], input[type="submit"], button, .button-1, .button-2 {border-radius: 0px;}
+.ajax-cart-button-wrapper {border-color: #327478;}
+
+/* hiding footer banner img */
+.nivo-main-image {display:none!important;}
+
+/* font */
+h1, h2, h3, h4, h5, p, ul, ol  { font-family:"Open Sans";}
+p, ul, ol{font-size: 16px; color: #707070; line-height:22px;}
+h1 {
+    color:#2a7378;
+    font-size: 48px;
+    line-height: 45px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+h2 {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+h3 {font-size:19px;}
+h4 {font-size:19px;font-weight:700;}
+
+/* menu and footer text */
+.footbox p {color:#fff; font-size:13px;}
+.footbox  ul {color:#fff; font-size:13px;}
+.dropdown ul {color:#fff; font-size:13px;}
+
+/* home page edits */
+/*.html-home-page .master-wrapper-content {background-image: url(https://www.whittakersystem.com/Content/Images/uploaded/GlassBuilding.jpg);}*/
+.html-home-page {background:#2a7378;}
+/* CME EDIT */
+.get-started-block{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #2a7378;
+    padding: 15px;
+    display: block;
+    float: left;
+    font-size: 21px;
+    margin-bottom:10px;
+}
+.get-started-image {
+    margin: 0!important;
+    display: block;
+    float: left;
+    border: 5px solid #2a7378;
+    border-bottom: none;
+    width:100%;
+}
+.get-started-p{
+padding:5px;
+}
+.support-image{
+    width:100%;
+    display:block;
+    margin:0!important;
+    border: 5px solid #2a7378;
+    border-bottom: none;
+}
+.support-span{
+    background-color: #2a7378;
+    color: white;
+    font-size: 19px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.no-borders{
+    border:none;
+}
+.no-borders tr{border:none;}
+.rich-blog-homepage{float:left;}
+.container{width:100%;}
+.container .row img{width:100%;}
+.container .row{width:100%;float:left;}
+.container .left-container{float:left;width:50%;padding:10px;}
+.container .right-container{float:left;width:50%;padding:10px;}
+.bottom-row .left-container{float:left;width:33.3%;padding:10px;}
+.bottom-row .center-container{float:left;width:33.3%;padding:10px;}
+.bottom-row .right-container{float:left;width:33.3%;padding:10px;}
+.slider-wrapper {
+    margin: 0 0 -267px!important;
+}
+.sub-text{color:#37939b;}
+.topic-block-title h2{color:#37939b;}
+.rich-blog-homepage .title{display:none;}
+.header-menu{background-color:white;}
+.header-menu > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    color: #444444;
+}
+.header-logo{display:none;}
+.homepagelogo:hover{none!important;}
+.header-menu > ul > li:hover > a, .header-menu > ul > li:hover > span{background-color:transparent;}
+.homepagelogo a{
+    background: url(http://store.whittakersystem.com/noptest/content/images/thumbs/0000005.png);
+    width: 333px;
+    height: 98px;
+    background-repeat: no-repeat;
+}
+.homepagelogo a:hover{
+    background: url(http://store.whittakersystem.com/noptest/content/images/thumbs/0000005.png);
+    width: 333px;
+    height: 98px;
+    background-repeat: no-repeat;
+}
+.homepagelogo span{display:none;}
+.rich-blog-homepage .post-title{
+    color: #37939b;
+    font-size:25px;
+    font-weight:normal;
+}
+.html-home-page  .master-wrapper-content {
+    background-size: 100%!important;
+    background-color: #2a7378!important;
+    margin-top: -25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top:0;
+}
+.html-home-page .page-body {/*display:none;*/}
+.home-container{background-color:white;margin:0 auto;padding:50px;overflow:hidden;}
+.html-home-page .footer {margin-top: -30px;}
+
+.html-home-page  .slider-wrapper {
+    background: url(http://store.whittakersystem.com/noptest/Content/Images/uploaded/banners/new-banner/home-image.png);
+    height: 772px;
+    width: 100%;
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* blog section */
+
+.html-blog-page  .master-wrapper-content {background-image: url(https://www.whittakersystem.com/Content/Images/uploaded/GlassBuilding-Inner-page.jpg);}
+.html-blog-page  {background:#2a7378;}
+.html-blog-page  .master-wrapper-content {
+    background-size: 100%!important;
+    background-color: #2a7378!important;
+    margin-top: -25px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 350px;
+}
+.html-blog-page {padding-right:40px;}
+
+.html-blog-page body {background:#2a7378;} 
+.block .title {
+    background: none!important;
+    color: #327478;
+}
+.html-blog-page .side-2 {background:#f3f3f3; padding:50px;}
+
+.html-blog-page .master-column-wrapper {
+    background: #fff;
+    padding-top: 80px;
+}
+
+.html-blog-page .ajax-cart-button-wrapper input[type="text"] {display:none;}
+
+
+.html-blog-page .ajax-cart-button-wrapper {
+    display: inline-block;
+    border: 2px solid #327478;
+    border-radius: 0px;
+    background: #327478!important;
+    padding: 0px 15px;
+}
